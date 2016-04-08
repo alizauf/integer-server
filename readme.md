@@ -13,8 +13,6 @@ Users can request two types of data:
 - the *n*th term of a specific number sequence
 
 
-Using the API
-
 Run the server
 --------------
 1. Create a new directory and cd into it
@@ -27,27 +25,38 @@ If you use a different port, change below.
 Access the API endpoint
 -----------------------
 The URL path has 3 required parameters:
-http://localhost:5000/api/v1.0/functions/FUNCTION/NUMBER/OPTION
+
+`http://localhost:5000/api/v1.0/functions/FUNCTION/NUMBER/OPTION`
+
 1. **FUNCTION**
+
 Options: 
-'fibonacci'
-'happy'
-'abundant'
+- `fibonacci`
+- `happy`
+- `abundant`
+
 2. **NUMBER** (the nth term)
+
 Options:
-Any integer > 0
+- `Any integer > 0`
+
 3. **OPTION**
+
 Options:
-`1` - Will return a list of the first *n* terms of selected number sequence
-`2` - Will return the the *n*th term of selected number sequence
+
+- `1` Will return a list of the first *n* terms of selected number sequence
+- `2` Will return the the *n*th term of selected number sequence
 
 Try it out
 ----------
 Once your server is running, try it out. 
 The following command will return the first 10 numbers in the *fibonacci* sequence, as well as JSON metadata about your request
 `curl -i http://localhost:5000/api/v1.0/functions/fibonacci/10/1`
-Returns:
-```{
+
+returns:
+
+```
+{
   "list": [
     0,
     1,
@@ -66,7 +75,9 @@ Returns:
 ```
 
 `curl -i http://localhost:5000/api/v1.0/functions/happy/20/2`
+
 returns:
+
 ```
 {
   "n": 20,
