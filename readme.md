@@ -76,7 +76,7 @@ returns:
   "sequence": "fibonacci"
 }
 ```
-The follow request will return the 20th happy number.
+The following request will return the 20th happy number.
 
 `curl -i http://localhost:5000/api/v1.0/functions/happy/20/2`
 
