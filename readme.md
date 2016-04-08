@@ -21,6 +21,7 @@ Run the server
 4. If all goes well, you should see your server running with this message:
 
 `Running on http://127.0.0.1:5000/`
+
 If you use a different port, change below.
 
 Access the API endpoint
@@ -41,7 +42,7 @@ Valid input:
 Valid Input:
 - `Any integer > 0`
 
-3. **OPTION**
+**OPTION**
 
 Valid Input:
 
